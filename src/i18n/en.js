@@ -1,0 +1,160 @@
+// import i18n from "@/i18n/i18n.js";
+// const i18nKeys = i18n[localStorage.lang||"cn"];
+const en = {
+  lang_1: "English",
+  invalid_1: "Please fill in the fields",
+  invalid_2: "Please fill in the correct email address",
+  invalid_3: "Please fill in the correct mobile phone number",
+  // ----------一 {i18nKeys.qiye_1} `${i18nKeys.qiye_8}` -----------------
+  one_1: "Payment management is more convenient",
+  one_2:
+    "Want to control spending while freeing up your finance team? Learn about Fornax smart business cards, reimbursement and easy-to-use software built to improve financial efficiency for businesses of all types.",
+  one_3: "Contact us",
+  one_4: "Solution",
+  one_5: "High-quality financial team and partners",
+  // ----------二 ----------
+  two_1: "Get Fornax",
+  two_2: "Sign up for a free two-week trial and never regret it.",
+  two_3: "Set spending rules",
+  two_4: "Establish clear expense rules that are impossible to violate.",
+  two_5: "Issue virtual cards",
+  two_6:
+    "Give everyone from interns to CEOs their own unique card so they can use Apple Pay or Google Pay.",
+  two_7: "Consumption, recording, synchronization",
+  two_8:
+    "Use your Fornax card and get receipts in the app. No out-of-pocket costs.",
+  two_9: "Add a new subscription and pay",
+  two_10:
+    "Set up all recurring subscriptions and bill payments in Fornax, and view emerging consumer trends.",
+  two_11: "Provide complete solutions for teams and individuals",
+  two_12: "Virtual business card",
+  two_13:
+    "Our virtual cards come with powerful features to ensure safe, policy-compliant spending.",
+  two_14: "Subscription management",
+  two_15:
+    "Track and manage all your company's subscriptions without leaving Fornax.",
+  two_16: "Easy reimbursement",
+  two_17:
+    "Hey small spenders, feel free to submit a reimbursement request and get your refund ASAP",
+  two_18: "Bill payment",
+  two_19:
+    "Set up multi-tiered approval processes and payment plans so your bills are paid on time.",
+  // ---------- 三 -------------
+  three_1: "Product empowerment and control of company expenses",
+  three_2:
+    "Welcome to a feature-rich world that simplifies spending and keeps your business running. Give your team smoother financial management with these tools, insights, and controls",
+  three_3: "Register Now",
+  three_4: "Corporate Treasur Management",
+  three_5:
+    "Provide efficient management for enterprises, enhance security and anti-fraud capabilities, and real-time transaction updates allow you to obtain all the expenditure details you need in one place, plan execution plans and control budgets.",
+  three_6: "Use the service",
+  three_7: "Digital currency exchange",
+  three_8:
+    "Exchange fiat currencies and stablecoins safely and easily on the platform. We help you manage everything without paying high exchange fees. Instantly convert USDT, USDC or WUSD to your preferred fiat currency with instant exchange rates.",
+  three_9: "Register to use",
+  three_10: "Digital Currency Security (KYT)",
+  three_11:
+    "Experience safe and reliable exchange, check the security of other wallet account addresses with one click, risk monitoring, timely warning of danger, and be your digital currency security sentry. Use KYT to discover your risks in advance and ensure the safety and stability of each of your transactions.",
+  three_12: "Join now",
+  // ---------- 四 -------------
+  four_1: "No matter how you pay, we've got you covered",
+  four_2:
+    "We provide you with comprehensive technical support. You can view professional documents to understand our smart corporate cards to facilitate your better use and protect your rights and interests.",
+  four_3: "Technical documents",
+  four_4:
+    "We're helping corporate finance payments get back on track. Would you like to join?",
+  four_5:
+    "Virtual cards can be issued in minutes. No complicated data work required. Cancel at any time.",
+  four_6: "Free trial",
+  // ---------- 五 -------------
+  five_1: "Name*",
+  five_2: "Enter your name",
+  five_3: "Work email*",
+  five_4: "Enter your email address",
+  five_5: "Telephone number*",
+  five_6: "Enter your mobile number",
+  five_7: "Your specific question?",
+  five_8: "Write here",
+  five_9:
+    "By submitting this form, you agree to Wewallex's Privacy Policy and agree to receive communications from us.",
+  five_10: "Submit message",
+  five_11: "Contact address",
+  five_12: "8 The Green, Ste A, Dover 19901",
+  // ---------- 六 -------------
+  six_1: "About Us",
+  six_2:
+    "Our company is an American Fintech high-tech company that has obtained MSB authorization from the United States. The U.S. MSB license is a type of financial license supervised and issued by the U.S. Department of the Treasury. It mainly regulates businesses and companies related to money services, including digital currency and virtual currency transactions, ICO issuance, foreign exchange exchange, international remittances, etc.",
+  six_3: "Mail",
+  six_4: "Telegarm",
+  six_5: "Twitter",
+  six_6: "INS",
+  six_7: "GIT",
+  six_8: "We're helping companies get their financial payments back on track,",
+  six_9:
+    "Provide stable management for enterprises and help them achieve long-term financial management goals.",
+  six_10: "Contact",
+  six_11: "Email contact",
+  six_12: "Home",
+  six_13: "Solution",
+  six_14: "Poduct",
+  six_15: "Sale",
+  six_16: "Document",
+  six_17: "Cooperation",
+  six_18: "Company",
+  six_19: "About Us",
+  six_20: "Technical support",
+  six_21: "Blog",
+  // ---------- 三 -------------
+  ttt1: "",
+  ttt2: "",
+  ttt3: "",
+  ttt4: "",
+  ttt5: "",
+  ttt6: "",
+  ttt7: "",
+  ttt8: "",
+  ttt9: "",
+  ttt10: "",
+  ttt11: "",
+  ttt12: "",
+  ttt13: "",
+  ttt14: "",
+  ttt15: "",
+  ttt16: "",
+  ttt17: "",
+  ttt18: "",
+  ttt19: "",
+  ttt20: "",
+  ttt21: "",
+  ttt22: "",
+  ttt23: "",
+  ttt24: "",
+  ttt25: "",
+  ttt26: "",
+  ttt27: "",
+  ttt28: "",
+  ttt29: "",
+  ttt30: "",
+  ttt31: "",
+  ttt32: "",
+  ttt33: "",
+  ttt34: "",
+  ttt35: "",
+  ttt36: "",
+  ttt37: "",
+  ttt38: "",
+  ttt39: "",
+  ttt40: "",
+  ttt41: "",
+  ttt42: "",
+  ttt43: "",
+  ttt44: "",
+  ttt55: "",
+  ttt56: "",
+  ttt57: "",
+  ttt58: "",
+  ttt59: "",
+  ttt60: "",
+};
+
+export default en;
