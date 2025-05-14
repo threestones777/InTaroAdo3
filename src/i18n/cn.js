@@ -1,6 +1,7 @@
 // import i18n from "@/i18n/i18n.js";
 // const i18nKeys = i18n[localStorage.lang||"cn"];
 const cn = {
+  login_1: "登入",
   lang_1: "繁体中文",
   invalid_1: "請填寫字段",
   invalid_2: "請填寫正確信箱地址",

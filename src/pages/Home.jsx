@@ -184,49 +184,63 @@ export default function Home() {
             ))}
           </div>
 
-          {/* 语言切换下拉菜单 */}
-          <div
-            onMouseEnter={toggleLanguage}
-            ref={languageRef}
-            className={`relative right-86 top-0 w-106 h-22 flex justify-between ${
-              languageOpen ? "text-[#3C8CFF]" : "text-[#838B9C]"
-            } hover:cursor-pointer`}
-          >
-            <img
-              src={languageOpen ? lang2 : lang1}
-              className="w-16 h-16 relative top-3"
-            />
-            <span className="text-14 leading-22 font-normal">
-              {i18nKeys.lang_1}
-            </span>
-            <img
-              src={languageOpen ? up : down}
-              className={`w-24 h-24 relative bottom-3 transition-transform`}
-            />
+          <div className="relative right-86 top-10 flex space-x-32">
+            {/* 语言切换下拉菜单 */}
+            <div
+              onMouseEnter={toggleLanguage}
+              ref={languageRef}
+              className={`w-106 h-22 flex justify-between ${
+                languageOpen ? "text-[#3C8CFF]" : "text-[#838B9C]"
+              } hover:cursor-pointer`}
+            >
+              <img
+                src={languageOpen ? lang2 : lang1}
+                className="w-16 h-16 relative top-3"
+              />
+              <span className="text-14 leading-22 font-normal">
+                {i18nKeys.lang_1}
+              </span>
+              <img
+                src={languageOpen ? up : down}
+                className={`w-24 h-24 relative bottom-3 transition-transform`}
+              />
 
-            {languageOpen && (
-              <div
-                onMouseLeave={toggleLanguage2}
-                className="w-135 text-center p-17 pb-0 absolute z-10 left-[0px] top-[34px] origin-top-right bg-white shadow-[0px_80px_60px_10px_rgba(60,140,255,0.2)] rounded-16"
-              >
-                <div className="">
-                  {languages.map((lang) => (
-                    <div
-                      key={lang.code}
-                      className={`block rounded-16 px-4 py-2 text-14 leading-16 hover:text-[#1676FE] ${
-                        currentLanguage === lang.code
-                          ? "text-[#000]"
-                          : "text-[#999]"
-                      } flex justify-center mb-20 hover:cursor-pointer`}
-                      onClick={() => handleLanguageSelect(lang)}
-                    >
-                      <img src={lang.img} className="h-16 w-16 mr-16" />
-                      <p>{lang.name}</p>
-                    </div>
-                  ))}
+              {languageOpen && (
+                <div
+                  onMouseLeave={toggleLanguage2}
+                  className="w-135 text-center p-17 pb-0 absolute z-10 left-[0px] top-[34px] origin-top-right bg-white shadow-[0px_80px_60px_10px_rgba(60,140,255,0.2)] rounded-16"
+                >
+                  <div className="">
+                    {languages.map((lang) => (
+                      <div
+                        key={lang.code}
+                        className={`block rounded-16 px-4 py-2 text-14 leading-16 hover:text-[#1676FE] ${
+                          currentLanguage === lang.code
+                            ? "text-[#000]"
+                            : "text-[#999]"
+                        } flex justify-center mb-20 hover:cursor-pointer`}
+                        onClick={() => handleLanguageSelect(lang)}
+                      >
+                        <img src={lang.img} className="h-16 w-16 mr-16" />
+                        <p>{lang.name}</p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
+            {/* 登录 */}
+            <div
+              onClick={() => {
+                window.location.href = "https://merchant.wewallex.com/#/login";
+              }}
+              style={{
+                background: "linear-gradient( 90deg, #3C8CFF 0%, #49EDFF 95%)",
+              }}
+              className="text-14 text-[#fff] rounded-25 font-normal py-9 px-34 hover:opacity-80 hover:cursor-pointer relative bottom-10"
+            >
+              {i18nKeys.login_1}
+            </div>
           </div>
         </div>
       </nav>

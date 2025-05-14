@@ -1,6 +1,7 @@
 // import i18n from "@/i18n/i18n.js";
 // const i18nKeys = i18n[localStorage.lang||"cn"];
 const en = {
+  login_1: "login",
   lang_1: "English",
   invalid_1: "Please fill in the fields",
   invalid_2: "Please fill in the correct email address",

@@ -17,7 +17,7 @@ export default function Three({ onRequest }) {
           return (
             <div
               key={index}
-              className={`w-388 h-413 ${item.color} rounded-25 wow animate__animated animate__fadeInUp relative`}
+              className={`w-388 h-413 ${item.color} rounded-25 shadow-sm wow animate__animated animate__fadeInUp relative`}
             >
               <img
                 src={item.img}

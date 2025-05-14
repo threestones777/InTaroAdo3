@@ -69,7 +69,7 @@ export default function Four({ onRequest }) {
           </div>
           <span
             onClick={handleClick1}
-            className="inline-block w-160 h-56 rounded-90 text-center bg-[rgba(60,140,255,0)] py-20 mt-28 ml-20 text-[#3C8CFF] text-16 leading-16 font-normal border-1 border-[#3C8CFF] hover:cursor-pointer hover:opacity-80"
+            className="inline-block w-244 h-56 rounded-90 text-center bg-[rgba(60,140,255,0)] py-20 mt-28 ml-20 text-[#3C8CFF] text-16 leading-16 font-normal border-1 border-[#3C8CFF] hover:cursor-pointer hover:opacity-80"
           >
             {i18nKeys.four_6}
           </span>

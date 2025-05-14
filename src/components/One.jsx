@@ -26,30 +26,28 @@ export default function One({ onRequest }) {
   };
   return (
     <div className="pt-95">
-      <div className="w-full h-481 flex justify-between">
-        <div className="w-[calc(100%_-_720px)]">
-          <div
-            className={`z-20 float-right ${
-              localStorage.lang === "en"
-                ? "w-710 relative left-110"
-                : "w-548 mr-54"
-            } `}
-          >
+      <div className="w-full relative">
+        <div className="w-720 absolute right-0 bottom-210">
+          <img src={bg} className="w-720 h-277 relative top-106" />
+          <img src={bg1} className="absolute w-389 h-400 top-40 left-203" />
+        </div>
+        <div className="w-1200 h-375 mx-auto relative">
+          <div className="relative">
             <p
               className={`text-[#000] text-64  ${
-                localStorage.lang === "en" ? "leading-72" : "leading-96"
+                localStorage.lang === "en" ? "w-700 leading-72" : "leading-96"
               } font-bold mt-106`}
             >
               {i18nKeys.one_1}
             </p>
             <p
               className={`text-[#333] text-16 leading-24 font-normal mt-20 ${
-                localStorage.lang === "en" ? "w-727" : ""
+                localStorage.lang === "en" ? "w-727" : "w-550"
               }`}
             >
               {i18nKeys.one_2}
             </p>
-            <p className="mt-40">
+            <p className="mt-40 flex items-center">
               <span
                 onClick={handleClick}
                 className="z-30 inline-block w-160 h-48 rounded-50 text-center py-16 hover:cursor-pointer hover:opacity-80 relative"
@@ -72,12 +70,56 @@ export default function One({ onRequest }) {
             </p>
           </div>
         </div>
-        <div className="w-720 pt-106 relative">
+        {/* <div className="w-[calc(100%_-_720px)]">
+          <div
+            className={`z-20 float-right ${
+              localStorage.lang === "en"
+                ? "w-710 relative left-110"
+                : "w-548 mr-54"
+            } `}
+          >
+            <p
+              className={`text-[#000] text-64  ${
+                localStorage.lang === "en" ? "leading-72" : "leading-96"
+              } font-bold mt-106`}
+            >
+              {i18nKeys.one_1}
+            </p>
+            <p
+              className={`text-[#333] text-16 leading-24 font-normal mt-20 ${
+                localStorage.lang === "en" ? "w-727" : ""
+              }`}
+            >
+              {i18nKeys.one_2}
+            </p>
+            <p className="mt-40 flex">
+              <span
+                onClick={handleClick}
+                className="z-30 inline-block w-160 h-48 rounded-50 text-center py-16 hover:cursor-pointer hover:opacity-80 relative"
+                style={{
+                  background:
+                    "linear-gradient( 270deg, #49EDFF 0%, #3C8CFF 95%)",
+                }}
+              >
+                <span className="z-10 w-117 h-60 bg-[rgba(56,120,255,0.5)] blur-[54px] absolute left-20"></span>
+                <span className="text-[#FCFCFD] text-18 leading-16 font-normal relative">
+                  {i18nKeys.one_3}
+                </span>
+              </span>
+              <span
+                onClick={handleClick1}
+                className="inline-block w-160 h-48 rounded-50 text-center py-16 ml-20 text-[#0055FF] text-18 leading-16 font-normal border-1 border-[#0055FF] hover:cursor-pointer hover:opacity-80"
+              >
+                {i18nKeys.one_4}
+              </span>
+            </p>
+          </div>
+        </div> */}
+        {/* <div className="w-720 absolute right-0">
           <img src={bg} className="w-720 h-277" />
           <img src={bg1} className="absolute w-389 h-400 top-40 left-203" />
-        </div>
+        </div> */}
       </div>
-      <div></div>
       <div className="w-1200 h-200 bg-white rounded-35 mx-auto relative shadow-[40px_50px_30px_40px_rgba(13,16,37,0.06)]">
         <div className="text-center text-[#2C313B] text-24 font-bold pt-38 pb-21">
           {i18nKeys.one_5}
